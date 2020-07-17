@@ -1,6 +1,15 @@
 PgBouncer Docker image
 ======================
 
+## Deploy to Render
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+### Usage
+
+* Update your app to use the hostname of the private service created above instead of the db hostname.
+* Update your connection string to use `sslmode=disable` as pgbouncer has not been configured for terminating tls connections.
+
 This is a minimal PgBouncer image, based on Alpine Linux.
 
 Features:
